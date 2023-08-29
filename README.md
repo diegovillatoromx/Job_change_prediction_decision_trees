@@ -27,7 +27,7 @@ Previously, we explored logistic regression on this dataset. It's recommended to
 ![Architecture Diagram](https://github.com/diegovillatoromx/Job_change_prediction_decision_trees/blob/main/architecture_diagram_decision_trees.png)
 
 ## Data Description
-The CSV consists of around 2000 rows and 16 columns in the [dataset](https://github.com/diegovillatoromx/Job_change_prediction_decision_trees/blob/main/input/DS_Job_Change_Data.csv)
+The CSV consists of around 19,158 rows and 16 columns in the [dataset](https://github.com/diegovillatoromx/Job_change_prediction_decision_trees/blob/main/input/DS_Job_Change_Data.csv)
 ### Features:
 - enrollee_id : Unique ID for candidate
 - city: City code
