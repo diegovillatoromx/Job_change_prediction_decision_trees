@@ -48,7 +48,7 @@ The CSV consists of around 19,158 rows and 14 columns in the [dataset](https://g
 
 ```
   input
-    |_data_regression.csv
+    |_DS_Job_Change_Data.csv
 
   ML_pipeline
     |_evaluate_metrics.py
