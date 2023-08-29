@@ -24,8 +24,7 @@ Our case study focuses on a churn dataset, where "churned customers" are those e
 Previously, we explored logistic regression on this dataset. It's recommended to review the [Build a Logistic Regression Model](https://github.com/diegovillatoromx/Strategic_Workforce_Analysis_Predicting_Job_Transition) project. Now, we aim to apply the decision tree classifier to the same dataset.
 ## Architecture
 
-![Architecture Diagram](https://github.com/diegovillatoromx/Customer_Churn_Prediction_Model/blob/main/architecture_diagram.png)
-
+![Architecture Diagram](https://github.com/diegovillatoromx/Job_change_prediction_decision_trees/blob/main/architecture_diagram_decision_trees.png)
 Diagram description: Briefly explain the components and major flows in your architecture. You can mention process stages, technologies used, and how they connect.
 
 ## Data Description
