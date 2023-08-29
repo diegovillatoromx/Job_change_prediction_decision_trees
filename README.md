@@ -67,7 +67,7 @@ The CSV consists of around 19,158 rows and 14 columns in the [dataset](https://g
 ```
 1. Input - It contains all the data that we have for analysis. There is one csv
 file in our case:
-   - Data_regression.csv
+   - DS_Job_Change_Data.csv
 2. ML_Pipeline
    - The ML_pipeline is a folder that contains all the functions put into different
       python files, which are appropriately named. These python functions are
