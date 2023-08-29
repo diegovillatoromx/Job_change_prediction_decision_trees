@@ -147,8 +147,7 @@ Perform analysis and modeling on prepared data:
 1. #### Model Selection
    Selecting only the numerical columns and excluding the columns we specified in the function
    ```terminal
-    X_train, X_test, y_train, y_test = prepare_model_smote(df,target,
-                                                 cols_to_exclude)
+    X_train, X_test, y_train, y_test = prepare_model_smote(df,target,cols_to_exclude)
     ```
 ### Evaluation
 
@@ -156,32 +155,32 @@ Perform analysis and modeling on prepared data:
    ```terminal
    model_dectree,y_pred = run_model(X_train,X_test,y_train,y_test)
    ```
-   ![running_model](https://github.com/diegovillatoromx/Customer_Churn_Prediction_Model/blob/main/images/run_model.png)
+   ![running_model](https://github.com/diegovillatoromx/Job_change_prediction_decision_trees/blob/main/images/run_model_trees.png)
 
 
 2. #### Performance metrics
    ```terminal
    conf_matrix = confusion_matrix(y_test,y_pred)
    ```
-   ![running_model](https://github.com/diegovillatoromx/Customer_Churn_Prediction_Model/blob/main/images/cof_matrix.png)
+   ![running_model](https://github.com/diegovillatoromx/Job_change_prediction_decision_trees/blob/main/images/conf_matrix_trees.png)
 
    ```terminal
    roc_val = roc_curve(model_dectree,X_test,y_test)
    ```
-   ![ROC](https://github.com/diegovillatoromx/Customer_Churn_Prediction_Model/blob/main/images/Log_ROC.png)
+   ![ROC](https://github.com/diegovillatoromx/Job_change_prediction_decision_trees/blob/main/images/Log_ROC.png)
 
    ```terminal
    decision_tree_plot = plot_model(model_dectree,['not churn','churn'])
    plt.savefig("output/"+"Decision_Tree_plot.png")
    ```
-   ![tree](https://github.com/diegovillatoromx/Customer_Churn_Prediction_Model/blob/main/images/Decision_Tree_plot.png)
+   ![tree](https://github.com/diegovillatoromx/Job_change_prediction_decision_trees/blob/main/images/Decision_Tree_plot.png)
 
 3. #### Feature Importance
    ```terminal
    fea_imp = plot_feature_importances(model_dectree)
    plt.savefig("output/"+"Feature_Importance.png")
    ```
-   ![running_model](https://github.com/diegovillatoromx/Customer_Churn_Prediction_Model/blob/main/images/Feature_Importance.png)
+   ![running_model](https://github.com/diegovillatoromx/Job_change_prediction_decision_trees/blob/main/images/Feature_Importance.png)
 
 # Contributing
   1. Focus changes on specific improvements.
