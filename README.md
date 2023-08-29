@@ -124,18 +124,21 @@ Before analysis, prepare data by loading and processing it:
     ```terminal
     datapath = 'input/data_regression.csv'
     df = read_data(datapath)
-    df.head(5)
+    df.head(6)
     ```
-    ![df_head](https://github.com/diegovillatoromx/Customer_Churn_Prediction_Model/blob/main/images/dfhead.png)
+    ![df_head](https://github.com/diegovillatoromx/Job_change_prediction_decision_trees/blob/main/images/dfhead_trees.png)
  
 3. #### Inspection and cleaning the data
     ```terminal
     x = inspection(df)
     ```
-    ![inspection](https://github.com/diegovillatoromx/Customer_Churn_Prediction_Model/blob/main/images/inspection.png)
+    ![inspection](https://github.com/diegovillatoromx/Job_change_prediction_decision_trees/blob/main/images/inspection_trees.png)
 4. #### Cleaning and Preprocessing:
    Clean data by handling missing values, normalization, etc.
     ```terminal
+    column_names = df.columns.tolist() #list the column names from dataframe
+    target = column_names[-1] #select the target column
+    cols_to_exclude = column_names[0:4] #columns to exclude because are not relevant
     df = null_values(df)
     ```
 ### Training Model
@@ -144,8 +147,8 @@ Perform analysis and modeling on prepared data:
 1. #### Model Selection
    Selecting only the numerical columns and excluding the columns we specified in the function
    ```terminal
-    X_train, X_test, y_train, y_test = prepare_model_smote(df,class_col='churn',
-                                                 cols_to_exclude=['customer_id','phone_no', 'year'])
+    X_train, X_test, y_train, y_test = prepare_model_smote(df,target,
+                                                 cols_to_exclude)
     ```
 ### Evaluation
 
