@@ -29,24 +29,20 @@ Previously, we explored logistic regression on this dataset. It's recommended to
 ## Data Description
 The CSV consists of around 2000 rows and 16 columns in the [dataset](https://github.com/diegovillatoromx/Job_change_prediction_decision_trees/blob/main/input/DS_Job_Change_Data.csv)
 ### Features:
-- Year
-- Customer_id - unique id
-- Phone_no - customer phone no
-- Gender -Male/Female
-- Age
-- No of days subscribed - the number of days since the subscription
-- Multi-screen - does the customer have a single/ multiple screen subscription
-- Mail subscription - customer receive mails or not
-- Weekly mins watched - number of minutes watched weekly
-- Minimum daily mins - minimum minutes watched
-- Maximum daily mins - maximum minutes watched
-- Weekly nights max mins - number of minutes watched at night time
-- Videos watched - total number of videos watched
-- Maximum_days_inactive - days since inactive
-- Customer support calls - number of customer support calls
-- Churn
-  - 0 No
-  - 1 Yes 
+- enrollee_id : Unique ID for candidate
+- city: City code
+- city_ development _index : Developement index of the city (scaled)
+- gender: Gender of candidate
+- relevent_experience: Relevant experience of candidate
+- enrolled_university: Type of University course enrolled if any
+- education_level: Education level of candidate
+- major_discipline :Education major discipline of candidate
+- experience: Candidate total experience in years
+- company_size: No of employees in current employer's company
+- company_type : Type of current employer
+- last_new_job: Difference in years between previous job and current job
+- training_hours: training hours completed
+- target: 0 – Not looking for job change, 1 – Looking for a job change
 
 ## Modular_Code_Overview
 
